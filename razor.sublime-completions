@@ -1,0 +1,12 @@
+{
+    "scope": "text.html.razor",
+    "completions": [{
+            "trigger": "@",
+            "contents": [
+                "@for",
+                "@each",
+                "@if"
+            ]
+        }
+    ]
+}

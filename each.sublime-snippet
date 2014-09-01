@@ -1,0 +1,8 @@
+<snippet>
+    <content><![CDATA[@each(${1:item} in ${2:items}){
+    @(${1:item}.${3:prop})$0
+}]]></content>
+    <tabTrigger>each</tabTrigger>
+    <scope>text.html.razor</scope>
+    <description>@each(...){ ... }</description>
+</snippet>

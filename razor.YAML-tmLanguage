@@ -1,0 +1,48 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+name: razor
+#一个string block
+scopeName: text.html.razor
+fileTypes: [razor]
+uuid: 96d11ed1-ef1d-470d-8ca8-feaadb80cea7
+
+patterns:
+
+#normal html
+- include: text.html.basic
+
+#@(-= var)
+- name: razor.variable
+  begin: (@)\s*?\(
+  beginCaptures:
+    '1': { name: keyword }
+  end: \)
+  patterns:
+  - name: keyword
+    match: ^[-=]{0,2}
+  - include: source.js
+
+#@{ ... }
+- name: source.js
+  # name = source.js -> 注释//
+  begin: (@)\s*?\{
+  beginCaptures:
+    '1': { name: keyword }
+  end: \}
+  patterns:
+  - include: source.js
+
+#@for(){ ... }
+- name: razor.control
+  begin: (@)([\s\S]*?\{)
+  beginCaptures:
+    '1': { name: keyword }
+    '2': { name: source.js }
+  end: \}
+  patterns:
+  - include: '$self'
+
+#@include
+- name: razor.include
+  match: '(@)include'
+  captures:
+    '1': { name: keyword }
