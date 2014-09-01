@@ -3,7 +3,7 @@
 [razor-tmpl](https://github.com/magicdawn/razor-tmpl) syntax definition & snippet for Sublime Text 3 or 2(not tested)
 
 #download
-Intsall `Package Control` for your sublime text,then use `Ctrl+Shift+P` ,hit `install package`
+`razor-tmpl` for `Package Control`
 
 #usage
 just use `.razor` as your template file ext,exmaple `index.razor`
