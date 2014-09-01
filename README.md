@@ -14,7 +14,7 @@ or you can use `set syntax razor`
 - `each`	->	`@each(item in items`
 - `layout`->	`@{ layout = "layout_path"; }`
 - `include`	->	`@include("to_be_included")`
-- `=`	`@(variable_or_expression)`
+- `=`	->	`@(variable_or_expression)`
 
 the `tab_trigger` means : 
 if you tap `for` and press the `Tab` button,then
