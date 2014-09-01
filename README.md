@@ -10,13 +10,11 @@ just use `.razor` as your template file ext,exmaple `index.razor`
 or you can use `set syntax razor`
 
 #snippet
-|tab_trigger| meaning|
-|-|-|
-|for|@for(...)|
-|each|@each(item in items)|
-|layout|@{ layout = "layout_path"; }|
-|include|@include("to_be_included")|
-|=|@(variable_or_expression)|
+`for`	->	`@for(...)`
+`each`	->	`@each(item in items`
+`layout`->	`@{ layout = "layout_path"; }`
+`include`	->	`@include("to_be_included")`
+`=`	`@(variable_or_expression)`
 
 the `tab_trigger` means : 
 if you tap `for` and press the `Tab` button,then
@@ -29,5 +27,5 @@ displayed
 
 
 
-#ScreenShot
+#Screenshot
 ![](razor.tmLanguage.screenshot.jpg)
