@@ -1,5 +1,5 @@
 <snippet>
-    <content><![CDATA[@{ layout = "${1:layout_path}";}$0]]></content>
+    <content><![CDATA[@{ var layout = "${1:layout_path}";}$0]]></content>
     <tabTrigger>layout</tabTrigger>
     <scope>text.html.razor</scope>
     <description>@{ layout }</description>

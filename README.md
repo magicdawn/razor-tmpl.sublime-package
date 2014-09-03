@@ -9,10 +9,11 @@
 just use `.razor` as your template file ext,exmaple `index.razor`
 or you can use `set syntax razor`
 
-#snippet
+#snippets
 - `for`	->	`@for(...)`
 - `each`	->	`@each(item in items`
-- `layout`->	`@{ layout = "layout_path"; }`
+- `layout`->	`@{ var layout = "layout_path"; }`
+- `dest` ->	`@{ var dest = "dest_path";}`
 - `include`	->	`@include("to_be_included")`
 - `=`	->	`@(variable_or_expression)`
 

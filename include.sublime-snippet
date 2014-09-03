@@ -1,7 +1,6 @@
 <snippet>
     <content><![CDATA[@include("${1:to_be_included}");$0]]></content>
-    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
     <tabTrigger>include</tabTrigger>
-    <!-- Optional: Set a scope to limit where the snippet will trigger -->
     <scope>text.html.razor</scope>
+    <description>@include</description>
 </snippet>
